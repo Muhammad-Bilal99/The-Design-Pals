@@ -1,0 +1,42 @@
+.software-carousel-container {
+  text-align: center;
+  padding: 20px;
+  margin-top: 4rem;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slick-slider {
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100px; /* Adjust width according to logo size */
+  margin-right: 20px;
+}
+
+.carousel-item img {
+  width: 100px; 
+  height: 100px; 
+  object-fit: contain
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
