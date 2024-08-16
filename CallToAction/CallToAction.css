@@ -1,0 +1,58 @@
+.call-to-action {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+  border-top: 3px solid #ff7f50; /* Thicker accent color border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 2s ease-out;
+}
+
+.cta-heading {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 800; /* Bolder font weight */
+  color: #333;
+  opacity: 0;
+  animation: slideInUp 1s ease-out 0.5s forwards;
+}
+
+.cta-button {
+  display: inline-block;
+  font-size: 1.4rem; /* Larger font size for better visibility */
+  padding: 16px 32px;
+  color: white;
+  background-color: #ff7f50;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700; /* Bolder font weight */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: slideInUp 1s ease-out 1s forwards;
+}
+
+.cta-button:hover {
+  background-color: #e65c4f;
+  transform: scale(1.1); /* Slightly larger scale for emphasis */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
