@@ -1,40 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Carousel.css';
+import embroidery from './embroidey-stock-transformed.jpeg';
+import caps from './caps-stock-transformed.png';
+import patches from './Untitled design.jpg';
 
 const slides = [
   {
-    image: 'https://c8.alamy.com/comp/2AP9BBD/textile-professional-and-industrial-embroidery-machine-machine-embroidery-is-an-embroidery-process-whereby-a-sewing-machine-or-embroidery-machine-i-2AP9BBD.jpg',
+    image: patches,
     heading: 'Exceptional Custom Patches with Fast Turnaround.',
     paragraph: 'Enhance your brand or express your unique style with our top-quality custom patches. We craft each patch with precision, ensuring vibrant colors and detailed designs that stand out.',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Get a Quote',
     buttonUrl: '#',
   },
   {
-    image: 'https://via.placeholder.com/1920x1080?text=Slide+1',
+    image: embroidery,
     heading: 'Expert Embroidery Digitizing In Just 4 Hours',
     paragraph: 'Transform your designs into flawless embroidery with our expert digitizing services. We meticulously convert your artwork into digital embroidery files that ensure smooth, detailed stitching on any fabric.',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Get a Quote',
     buttonUrl: '#',
   },
   {
     image: 'https://static.vecteezy.com/system/resources/previews/000/224/406/original/vector-fantasy-landscape-illustration.jpg',
     heading: 'Transform Your Ideas into Crisp Vector Artwork – Fast & Flawless.',
     paragraph: 'Get precise, scalable vector artwork tailored to your needs. Our expert team delivers high-quality designs with a quick turnaround, perfect for any application.',
-    buttonLabel: 'Get Started',
+    buttonLabel: 'Get a Quote',
     buttonUrl: '#',
   },
   {
-    image: 'https://via.placeholder.com/1920x1080?text=Slide+3',
+    image: caps,
     heading: 'Stand Out with Custom Caps – Crafted Just for You.',
     paragraph: 'Stand out with custom caps, crafted to your style with embroidery or print. High quality, fast delivery, and designed just for you.',
-    buttonLabel: 'Join Now',
+    buttonLabel: 'Get a Quote',
     buttonUrl: '#',
   },
   {
     image: 'https://www.dtfnc.com/cdn/shop/files/8_1.jpg?v=1694199777',
     heading: 'High-Resolution DTF Sheets for Vibrant Prints.',
     paragraph: 'Vibrant, durable DTF sheets that bring your designs to life. High-resolution prints with a quick turnaround, perfect for apparel and more.',
-    buttonLabel: 'Join Now',
+    buttonLabel: 'Get a Quote',
     buttonUrl: '#',
   }
 ];
@@ -105,7 +108,7 @@ const Carousel = ({ interval = 5000 }) => {
         <div className="carousel-content">
           <h1>{slides[currentIndex].heading}</h1>
           <p>{slides[currentIndex].paragraph}</p>
-          <a href={slides[currentIndex].buttonUrl} className="carousel-button">
+          <a href={slides[currentIndex].buttonUrl} className="gradient-button">
             {slides[currentIndex].buttonLabel}
           </a>
         </div>
