@@ -1,0 +1,87 @@
+.about-us-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-us-title {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  line-height: 3.75rem;
+  letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.about-us-text {
+  flex: 1;
+}
+
+.about-us-text p {
+  font-size: 1.2rem;
+  color: #0b1b21;
+  margin-bottom: 20px;
+}
+
+.about-us-text .gradient-button {
+  background: linear-gradient(45deg, #0f76bd, #e0f2ff);
+  color: #0b263d;
+  padding: 12px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: visible;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+}
+
+.gradient-button:hover {
+  border: 1px solid #0f76bd;
+  background: white;
+  color: #0f76bd;
+  transform: scale(1.02);
+}
+
+.about-us-image {
+  flex: 1;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-text {
+    margin-bottom: 20px;
+  }
+
+  .about-us-button {
+    margin: 0 auto;
+  }
+}

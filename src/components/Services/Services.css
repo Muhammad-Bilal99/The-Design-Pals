@@ -1,0 +1,98 @@
+.services-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.services-title {
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  line-height: 3.75rem;
+  letter-spacing: -2px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #0b1b21;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 48px; /* Increased spacing between cards */
+  margin-top: 5rem;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.service-text {
+  font-size: 1rem;
+  margin-bottom: 34px;
+  color: #555;
+}
+
+.gradient-button {
+  background: linear-gradient(45deg, #0f76bd, #e0f2ff);
+  color: #0b263d;
+  padding: 12px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  overflow: visible;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+}
+
+.gradient-button:hover {
+  border: 1px solid #0f76bd;
+  background: white;
+  color: #0f76bd;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
