@@ -42,6 +42,10 @@
   object-fit: contain
 }
 
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
 @keyframes scroll {
   0% {
     transform: translateX(0);

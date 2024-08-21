@@ -79,8 +79,8 @@ p {
 
 /* Gradient button styling */
 .carousel-content .gradient-button {
-  background: linear-gradient(45deg, #0f76bd, #e0f2ff);
-  color: #0b263d;
+  background:#0f76bd;
+  color: #ffffff;
   padding: 12px 40px;
   font-size: 18px;
   border: none;
